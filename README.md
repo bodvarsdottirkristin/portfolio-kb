@@ -128,7 +128,7 @@ This project is licensed under the MIT License.
 
 Kristin Bodvarsdottir
 - GitHub: [@bodvarsdottirkristin](https://github.com/bodvarsdottirkristin)
-- Email: contact@example.com
+- Email: kristin.bodvarsdottir@example.com
 
 ## 🙏 Acknowledgments
 

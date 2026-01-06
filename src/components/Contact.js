@@ -9,11 +9,11 @@ const Contact = () => {
         Feel free to reach out!
       </p>
       <div className="contact-links">
-        <a href="mailto:contact@example.com">Email Me</a>
+        <a href="mailto:kristin.bodvarsdottir@example.com">Email Me</a>
         <a href="https://github.com/bodvarsdottirkristin" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/kristin-bodvarsdottir" target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>
       </div>

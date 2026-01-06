@@ -8,16 +8,23 @@ const Navigation = () => {
     }
   };
 
+  const handleKeyPress = (e, sectionId) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      scrollToSection(sectionId);
+    }
+  };
+
   return (
     <nav>
       <div className="container">
         <h1>KB Portfolio</h1>
         <ul>
-          <li><a onClick={() => scrollToSection('about')} role="button" tabIndex={0} onKeyPress={(e) => e.key === 'Enter' && scrollToSection('about')}>About</a></li>
-          <li><a onClick={() => scrollToSection('skills')} role="button" tabIndex={0} onKeyPress={(e) => e.key === 'Enter' && scrollToSection('skills')}>Skills</a></li>
-          <li><a onClick={() => scrollToSection('projects')} role="button" tabIndex={0} onKeyPress={(e) => e.key === 'Enter' && scrollToSection('projects')}>Projects</a></li>
-          <li><a onClick={() => scrollToSection('analytics')} role="button" tabIndex={0} onKeyPress={(e) => e.key === 'Enter' && scrollToSection('analytics')}>Analytics</a></li>
-          <li><a onClick={() => scrollToSection('contact')} role="button" tabIndex={0} onKeyPress={(e) => e.key === 'Enter' && scrollToSection('contact')}>Contact</a></li>
+          <li><button onClick={() => scrollToSection('about')} onKeyPress={(e) => handleKeyPress(e, 'about')}>About</button></li>
+          <li><button onClick={() => scrollToSection('skills')} onKeyPress={(e) => handleKeyPress(e, 'skills')}>Skills</button></li>
+          <li><button onClick={() => scrollToSection('projects')} onKeyPress={(e) => handleKeyPress(e, 'projects')}>Projects</button></li>
+          <li><button onClick={() => scrollToSection('analytics')} onKeyPress={(e) => handleKeyPress(e, 'analytics')}>Analytics</button></li>
+          <li><button onClick={() => scrollToSection('contact')} onKeyPress={(e) => handleKeyPress(e, 'contact')}>Contact</button></li>
         </ul>
       </div>
     </nav>
